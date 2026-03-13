@@ -57,11 +57,11 @@ const LoginSignup = ({ onLogin }) => {
             )}
             <div>
               <label htmlFor="email" className="text-sm font-medium text-gray-700">Email Address</label>
-              <input id="email" name="email" type="email" required onChange={handleChange} className="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" />
+              <input placeholder='Email' id="email" name="email" type="email" required onChange={handleChange} className="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" />
             </div>
             <div>
               <label htmlFor="password" className="text-sm font-medium text-gray-700">Password</label>
-              <input id="password" name="password" type="password" required onChange={handleChange} className="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" />
+              <input  placeholder='Password' id="password" name="password" type="password" required onChange={handleChange} className="w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" />
             </div>
 
             {error && <p className="text-sm text-center text-red-500 font-semibold">{error}</p>}
